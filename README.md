@@ -19,7 +19,7 @@ One of the flaws of the current architecture is that we don't have a time-based 
  ## To conclude
  What if we needed to let the users of our API have their own garage implementation? (e.g.  Garage that automatically route the client to the nearest parking spot available or perhaps let them use a different caching system.)
 
-Perhaps something like that might do the trick:
+Because I have made it so that all business logic is encapsulated in the garage class and not spread over several classes. Something like this would work:
 
 ```mermaid
 classDiagram
